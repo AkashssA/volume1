@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Employee</h1>
+
+    <table border="1">
+        <thread>
+            <tr>
+                <th>id</th>
+            <th>name</th>
+            <th>salary</th>
+            </tr>
+
+
+        </thread>
+        <tbody>
+            {% for employee in employees %}
+            <tr>
+                <td>{{employee.pk}}</td>
+                <td>{{employee.name}}</td>
+                <td>{{employee.salary}}</td>
+
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+</body>
+</html>
